@@ -6,17 +6,6 @@ RSpec.describe "Todo Page", type: :feature, js: true do
 
   it "shows the todo on the page" do
     visit '/'
-    save_and_open_screenshot
     expect(page).to have_text todo.title
   end
-
-  # it "shows the todo deadline" do
-  #   visit '/'
-  #   expect(page).to have_text todo.deadline
-  # end
-  #
-  # it "shows the todo completedness" do
-  #   visit '/'
-  #   expect(page).to have_text todo.completed
-  # end
 end
