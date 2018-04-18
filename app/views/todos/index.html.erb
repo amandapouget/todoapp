@@ -1,0 +1,4 @@
+<h1> Todos </h1>
+
+<h2>Total: <%= @todos.length %></h2>
+<%= react_component('Todos', todos: @todos.to_json) %>
